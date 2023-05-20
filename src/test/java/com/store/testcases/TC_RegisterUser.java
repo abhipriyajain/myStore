@@ -65,6 +65,7 @@ public class TC_RegisterUser extends BaseClass {
 		logger.info("Account deleted successfully");
 		adpg.clickoncontbtn();
 		logger.info("Testcase completed");
+		logger.info("just for GIT");
 	}
 	
 
