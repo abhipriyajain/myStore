@@ -1,6 +1,9 @@
 package com.store.testcases;
 
-import org.openqa.selenium.JavascriptExecutor;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.store.pageobject.accountCreatedPage;
@@ -9,23 +12,21 @@ import com.store.pageobject.accountInfo;
 import com.store.pageobject.indexPage;
 import com.store.pageobject.loggedinPage;
 import com.store.pageobject.loginPage;
+import com.store.pageobject.logintoAccount;
 
 public class TC_RegisterUser extends BaseClass {
 	
-	@Test
-	public void registerTheUser()
+	@Test(enabled=false)
+	public void registerTheUser() throws IOException
 	{
-		driver.get(url);
-		driver.manage().window().maximize();
-		logger.info("URL Opened, page viewed successfully");
-			
+		
 		indexPage pg = new indexPage(driver);
 		pg.clickonSignIn();
 		
 		loginPage loginpg = new loginPage(driver);
 		loginpg.ValdiatethetitleforSignUp();		
 		loginpg.enterName("Abhip");
-		loginpg.enterEmailAddress("abhitest1233@asm.com");
+		loginpg.enterEmailAddress("abhitest221@asm.com");
 		logger.info("Name and email entered");
 		loginpg.clickonSignUp();
 		logger.info("User ready to create account, enter the details now");		
@@ -52,10 +53,16 @@ public class TC_RegisterUser extends BaseClass {
 		
 		accountCreatedPage acsucpage = new accountCreatedPage(driver);
 		acsucpage.verifythetextaccountcreated();
-		logger.info("Account is created successfully");
-		acsucpage.cliconcontinueButton();
+//		captureScreenshot(driver,"registerTheUser");
+//		Assert.assertTrue(false);
 		
-		loggedinPage lgpg = new loggedinPage(driver);
+		acsucpage.cliconcontinueButton();
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		driver.switchTo().alert().dismiss();
+
+		
+		
+		/*loggedinPage lgpg = new loggedinPage(driver);
 		lgpg.getloggedinastext();
 		logger.info("account logged in as of now");
 		lgpg.clickondeleteaccountbtn();
@@ -65,8 +72,45 @@ public class TC_RegisterUser extends BaseClass {
 		logger.info("Account deleted successfully");
 		adpg.clickoncontbtn();
 		logger.info("Testcase completed");
-		logger.info("just for GIT");
+		logger.info("just for GIT");*/
 	}
+
+	@Test
+	public void verifyLogin() throws IOException {
+		
+		logger.info("verify Login testcase started..");
+		
+		indexPage pg = new indexPage(driver);
+		pg.clickonSignIn();
+		
+		logger.info("Cliked on signed in");
+		logintoAccount la = new logintoAccount(driver);
+		la.enterEmail("abhitest221@asm.com");
+		la.enterPass("abhi12243");
+		la.clickonsignin();
+		
+		loggedinPage lgpg = new loggedinPage(driver);
+		String uname=lgpg.getUserName();
+		
+		if (uname.equals("Abhip"))
+		{
+			logger.info("VerifyLogin - Passed");
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			logger.info("VerifyLogin - Failed");
+			captureScreenshot(driver,"VerifyLogin");
+			Assert.assertTrue(false);
+		}
+			
+
+		
+	}
+
+	
+	
+	
 	
 
 }

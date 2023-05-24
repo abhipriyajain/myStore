@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-08T02:29:46 CEST" name="Suite" finished-at="2023-05-08T02:30:15 CEST" duration-ms="28275">
+  <suite started-at="2023-05-24T23:55:38 CEST" name="Default suite" finished-at="2023-05-24T23:56:00 CEST" duration-ms="22224">
     <groups>
     </groups>
-    <test started-at="2023-05-08T02:29:46 CEST" name="Test" finished-at="2023-05-08T02:30:15 CEST" duration-ms="28275">
-      <class name="com.store.testcases.TC_RegisterUser">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.store.testcases.TC_RegisterUser@201a4587]" started-at="2023-05-08T02:29:47 CEST" name="setup" finished-at="2023-05-08T02:29:50 CEST" duration-ms="3822" status="PASS">
+    <test started-at="2023-05-24T23:55:38 CEST" name="Default test" finished-at="2023-05-24T23:56:00 CEST" duration-ms="22224">
+      <class name="com.store.testcases.tc_writeReview">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.store.testcases.tc_writeReview@4310d43]" started-at="2023-05-24T23:55:38 CEST" name="setup" finished-at="2023-05-24T23:55:45 CEST" duration-ms="6808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="registerTheUser()[pri:0, instance:com.store.testcases.TC_RegisterUser@201a4587]" started-at="2023-05-08T02:29:50 CEST" name="registerTheUser" finished-at="2023-05-08T02:30:15 CEST" duration-ms="24382" status="FAIL">
+        <test-method signature="writeReview()[pri:1, instance:com.store.testcases.tc_writeReview@4310d43]" started-at="2023-05-24T23:55:45 CEST" name="writeReview" finished-at="2023-05-24T23:56:00 CEST" duration-ms="15363" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a/text()"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#ad_iframe"}
   (Session info: chrome=112.0.5615.122)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ABHIJAIN04', ip: '192.168.0.58', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.122, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\abhijain\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:3523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 660c2e70de38464f7ecf94257e8ef737
-*** Element info: {Using=xpath, value=//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a/text()}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.122, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\abhijain\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:2599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9555afae2b5124b820d6559a8c83778
+*** Element info: {Using=id, value=ad_iframe}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a/text()"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#ad_iframe"}
   (Session info: chrome=112.0.5615.122)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ABHIJAIN04', ip: '192.168.0.58', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.122, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\abhijain\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:3523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 660c2e70de38464f7ecf94257e8ef737
-*** Element info: {Using=xpath, value=//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a/text()}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.122, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\abhijain\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:2599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9555afae2b5124b820d6559a8c83778
+*** Element info: {Using=id, value=ad_iframe}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -46,14 +46,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
-at com.store.pageobject.loggedinPage.getloggedinastext(loggedinPage.java:23)
-at com.store.testcases.TC_RegisterUser.registerTheUser(TC_RegisterUser.java:59)
+at com.store.testcases.tc_writeReview.writeReview(tc_writeReview.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,8 +83,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerTheUser -->
-      </class> <!-- com.store.testcases.TC_RegisterUser -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- writeReview -->
+      </class> <!-- com.store.testcases.tc_writeReview -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

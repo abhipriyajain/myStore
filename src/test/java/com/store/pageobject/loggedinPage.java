@@ -17,6 +17,8 @@ public class loggedinPage {
 	
 	@FindBy(xpath="//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a/text()") WebElement loggedinas;
 	@FindBy(xpath="//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[5]/a") WebElement deleteAccountbtn;
+	@FindBy(xpath="//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[10]/a/b") WebElement userAcc;
+	@FindBy(linkText="Logout") WebElement logout;
 	
 	public void getloggedinastext()
 	{
@@ -27,5 +29,15 @@ public class loggedinPage {
 		deleteAccountbtn.click();
 	}
 	
+	public String getUserName()
+	{
+		String uname=userAcc.getText();
+		return uname;
+	}
+	
+	public void clicklogout()
+	{
+		logout.click();
+	}
 	
 }

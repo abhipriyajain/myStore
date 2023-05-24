@@ -22,6 +22,7 @@ public class accountCreatedPage {
 	public void verifythetextaccountcreated()
 	{
 		System.out.println(acctCreated.getText());
+
 	}
 	
 	public void cliconcontinueButton()
