@@ -1,13 +1,10 @@
 package com.store.testcases;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.store.pageobject.accountCreatedPage;
-import com.store.pageobject.accountDeleted;
 import com.store.pageobject.accountInfo;
 import com.store.pageobject.indexPage;
 import com.store.pageobject.loggedinPage;

@@ -77,9 +77,9 @@ public class BaseClass {
 		
 	}
 	@AfterClass
-public void teardown()
-{
-driver.close();
+	public void teardown()
+	{
+		driver.close();
 		driver.quit();
 	}
 	
